@@ -1,0 +1,122 @@
+:root {
+  color-scheme: dark;
+  --bg: #101114;
+  --panel: #171a1f;
+  --line: #2a2f37;
+  --text: #e7ece8;
+  --muted: #8b958e;
+  --accent: #7ed9a8;
+  --accent-ink: #102117;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 760px;
+  min-height: 180px;
+  background: var(--bg);
+  color: var(--text);
+  font: 12px/1.4 "Segoe UI", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+#status {
+  margin: 2px 0 0;
+  color: var(--muted);
+}
+
+button {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  border-color: #3d4740;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+#refresh {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 650;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  padding: 0 14px 10px;
+}
+
+#table-wrap {
+  max-height: 460px;
+  overflow: auto;
+  border-top: 1px solid var(--line);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+th,
+td {
+  padding: 6px 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background: #14171b;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+td.token {
+  font-weight: 650;
+}
+
+td.num,
+th.num {
+  text-align: right;
+}
+
+.empty {
+  padding: 22px 14px 28px;
+  color: var(--muted);
+}
+
+.sub {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 400;
+}

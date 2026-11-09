@@ -1,0 +1,14 @@
+{
+  "name": "gmgn-table-extractor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome extension that extracts GMGN table row details.",
+  "scripts": {
+    "test": "node scripts/test-extract.js"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  }
+}

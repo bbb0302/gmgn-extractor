@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>GMGN Table Extractor</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title-block">
+        <h1>GMGN rows</h1>
+        <p id="status">Reading the open table…</p>
+      </div>
+      <button id="refresh" type="button">Extract</button>
+    </header>
+    <div class="actions">
+      <button id="copy" type="button" disabled>Copy JSON</button>
+      <button id="csv" type="button" disabled>Download CSV</button>
+    </div>
+    <div id="table-wrap"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
